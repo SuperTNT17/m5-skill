@@ -1,0 +1,1 @@
+Dit is de repository voor alle opdrachten die ik ga maken tijdens de skill lessen in periode 1 van jaar 2
