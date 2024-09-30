@@ -1,13 +1,228 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    background-color: #1E2A5E;
+}
 
+li {
+    list-style-type: none;
+}
+
+.nav {
+    width: 100%;
+    background-color: #55679C;
+    display: flex;
+    justify-content: space-between;
+    min-height: 7rem;
+    align-items: center;
+    color: #eee;
+    font-size: 100%;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-size: 200%;
+    color: #eee;
+    border: 0.5rem solid #E94560;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.list {
+    display: flex;
+    gap: 4rem;
+}
+
+.cta {
+    width: 11rem;
+    padding: 0.5rem;
+    font-size: 70%;
+    background-color: #E94560;
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.cta:hover {
+    cursor: pointer;
+    background-color: hsl(350, 79%, 49%);
+    transition: 0.2s;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner>figure {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(30, 42, 94, 0.8), 60%, rgba(225, 215, 183, 0.9)), url("../img/pexels-osho-1046212.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner>figure>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: #eee;
+}
+
+.heading {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 500%;
+}
+
+.heading2 {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 380%;
+}
+
+.over {
+    padding: 4rem;
+    height: 80rem;
+    border-bottom: 0.2rem #eee solid;
+}
+
+.over>header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.over>header>h2 {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 380%;
+    color: #eee;
+}
+
+.over>div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 100%;
+}
+
+.over>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.over>div>div>p {
+    width: 55ch;
+    color: #eee;
+}
+
+.over>div>img {
+    width: 60rem;
+    height: 60rem;
+    object-fit: cover;
+}
+
+.kenmerken {
+    height: 80vh;
+    border-bottom: 0.2rem #eee solid;
+    padding: 4rem;
+}
+
+.kenmerken>header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 20%;
+}
+
+.kenmerken>header>h2 {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 380%;
+    color: #eee;
+}
+
+.onzeKenmerken {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerk {
+    color: #eee;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kenmerk>p {
+    width: 30ch;
+    text-align: center;
+}
+
+.kenmerkIcon {
+    font-size: 180%;
+    border: 0.1rem solid #E94560;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.galerij{
+    height: 80vh;
+}
+
+.galerij>header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.galerij>header>h2 {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 380%;
+    color: #eee;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto{
+    width: 25%;
+    height: 40rem;
+}
+
+.foto > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
